@@ -82,7 +82,7 @@ services:
       test: wget -qO- http://localhost:3620/readyz
   
   sidecar:
-    image: europe-west4-docker.pkg.dev/stakewiselabs/public/dvt-operator-sidecar:v0.2.0
+    image: europe-west4-docker.pkg.dev/stakewiselabs/public/dvt-operator-sidecar:v0.3.0
     restart: unless-stopped
     user: "1000:1000"
     networks: [dvnode]
