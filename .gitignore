@@ -1,0 +1,14 @@
+.env
+.env.charon.more
+docker-compose.override.yml
+charon-enr-private-key
+validator_keys/
+keystore-*
+deposit-data.json
+cluster-definition.json
+cluster-lock.json
+.DS_Store
+data/
+.idea
+.charon
+prometheus/prometheus.yml
