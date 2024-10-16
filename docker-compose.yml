@@ -70,8 +70,6 @@ services:
       - CHARON_MONITORING_ADDRESS=0.0.0.0:3620
       - CHARON_BUILDER_API=${BUILDER_API_ENABLED:-false}
       - CHARON_FEATURE_SET_ENABLE=${CHARON_FEATURE_SET_ENABLE:-}
-      - CHARON_LOKI_ADDRESSES=${CHARON_LOKI_ADDRESSES:-http://loki:3100/loki/api/v1/push}
-      - CHARON_LOKI_SERVICE=charon
     ports:
       - ${CHARON_PORT_P2P_TCP:-3610}:${CHARON_PORT_P2P_TCP:-3610}/tcp # P2P TCP libp2p
     networks: [dvnode]
